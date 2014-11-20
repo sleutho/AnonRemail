@@ -1,0 +1,12 @@
+
+content	anonremail	chrome/content/
+
+overlay	chrome://messenger/content/messengercompose/messengercompose.xul	chrome://anonremail/content/anonremail.xul
+
+skin	anonremail	classic/1.0	chrome/skin/classic/
+
+style	chrome://global/content/customizeToolbar.xul	chrome://anonremail/skin/anonremail.css
+
+locale	anonremail	en-US	chrome/locale/en-US/
+locale	anonremail	de-DE	chrome/locale/de-DE/
+

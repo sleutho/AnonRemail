@@ -1,0 +1,29 @@
+<!ENTITY anonremail.options.title "Optionen">
+<!ENTITY anonremail.options.headertitle "AnonRemailer">
+<!ENTITY anonremail.options.headerdescription "Email + Statistiken">
+<!ENTITY anonremail.options.emaillabel "Email-Adresse:">
+<!ENTITY anonremail.options.statsgroup "Statistiken">
+<!ENTITY anonremail.options.email.description1 "Diese Email wird zum Verschlüsseln und als Zieladresse verwendet.">
+<!ENTITY anonremail.options.email.description2 "Die Adresse muss bereits im PGP-Schlüsselbund enthalten sein.">
+<!ENTITY anonremail.options.statsgroup.link "Echolot-Link">
+<!ENTITY anonremail.options.statsgroup.link.description1 "Cypherpunk Remailers - Remailer Reliability Stats">
+<!ENTITY anonremail.options.statsgroup.link.description2 "Die Seite (*.txt) wird ausgewertet und visualisiert.">
+<!ENTITY anonremail.options.statsgroup.keylink "PGP-Key File">
+<!ENTITY anonremail.options.statsgroup.keylink.description1 "PGP-Key-Ring File">
+<!ENTITY anonremail.options.statsgroup.keylink.description2 "Fuer default ist hier ein Link fuer die PGP-Keys.">
+<!ENTITY anonremail.options.statsgroup.keylink.description3 "Datei im Browser oeffnen, Keys in Clipboard kopieren und dann in Enigmail importieren.">
+<!ENTITY anonremail.options.statsgroup.read "Lesen">
+<!ENTITY anonremail.options.listheader1 "remailer">
+<!ENTITY anonremail.options.listheader2 "email address">
+<!ENTITY anonremail.options.listheader3 "history">
+<!ENTITY anonremail.options.listheader4 "latency">
+<!ENTITY anonremail.options.listheader5 "uptime">
+<!ENTITY anonremail.options.list.udatetime "Last update:">
+<!ENTITY anonremail.options.default "Default">
+<!ENTITY anonremail.options.list.context "benutzen">
+<!ENTITY anonremail.label.menu "Nachricht anonymisieren">
+<!ENTITY anonremail.label.toolbar "AnonRemail">
+<!ENTITY anonremail.tooltip.toolbar "Remailer Einstellungen">
+<!ENTITY anonremail.anonsend.key "A">
+<!ENTITY anonremail.anonsend.accesskey "A">
+<!ENTITY anonremail.toggle.title "Sende-Optionen">

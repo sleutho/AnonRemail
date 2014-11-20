@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$ZaajT3"
+                   em:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
+                   em:minVersion="2.0"
+                   em:maxVersion="2.0.0.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="{516d2c44-a2c2-4d72-8082-003286242595}"
+                   em:name="AnonRemail"
+                   em:version="0.3.1"
+                   em:creator="eiji.anonremail@gmail.com"
+                   em:description="anonymous remailer automation - Type I - Cypherpunk"
+                   em:iconURL="chrome://anonremail/skin/anonremail32.png"
+                   em:optionsURL="chrome://anonremail/content/options.xul">
+    <em:targetApplication RDF:resource="rdf:#$ZaajT3"/>
+	<em:locale>locale/en-US/</em:locale>
+	<em:locale>locale/de-DE/</em:locale>
+  </RDF:Description>
+</RDF:RDF>

@@ -1,0 +1,24 @@
+#AnonRemailButton {
+  -moz-image-region: rect(0px 24px 24px 0px);
+  list-style-image: url("chrome://anonremail/skin/anonremail24.png");
+}
+
+toolbar[iconsize="small"] #AnonRemailButton {
+  -moz-image-region: rect(0px 16px 16px 0px);
+  list-style-image: url("chrome://anonremail/skin/anonremail16.png");
+}
+
+#anonremail-status-bar #anonremail-status {
+  list-style-image: none;
+  visibility: collapse;
+}
+
+#anonremail-status-bar[anon="active"] #anonremail-status {
+  list-style-image: url("chrome://anonremail/skin/16_anonremail_sb_active.png");
+  visibility: visible;
+}
+
+#anonremail-status-bar[anon="inactive"] #anonremail-status {
+  list-style-image: url("chrome://anonremail/skin/16_anonremail_sb_inactive.png");
+  visibility: visible;
+}

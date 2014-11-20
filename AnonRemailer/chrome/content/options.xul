@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+
+<!--
+   The contents of this file are subject to the Mozilla Public
+   License Version 1.1 (the "MPL"); you may not use this file
+   except in compliance with the MPL. You may obtain a copy of
+   the MPL at http://www.mozilla.org/MPL/
+
+   Software distributed under the MPL is distributed on an "AS
+   IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+   implied. See the MPL for the specific language governing
+   rights and limitations under the MPL.
+
+   The Original Code is AnonRemailer.
+
+   The Initial Developer of the Original Code is 
+   <eiji.anonremail@googlemail.com>.
+   
+
+   Alternatively, the contents of this file may be used under the
+   terms of the GNU General Public License (the "GPL"), in which case
+   the provisions of the GPL are applicable instead of
+   those above. If you wish to allow use of your version of this
+   file only under the terms of the GPL and not to allow
+   others to use your version of this file under the MPL, indicate
+   your decision by deleting the provisions above and replace them
+   with the notice and other provisions required by the GPL.
+   If you do not delete the provisions above, a recipient
+   may use your version of this file under either the MPL or the
+   GPL.
+-->
+
+<?xml-stylesheet href="chrome://global/skin/global.css"  type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://anonremail/locale/anonremail.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&anonremail.options.title;"
+	id="AnonRemailerOptions"
+	buttons="accept,cancel"
+	ondialogaccept="return doOK();"
+	onload="return onLoad();"
+	minwidth="450" minheight="100">
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="anonremail.locale" src="chrome://anonremail/locale/anonremail.properties"/>
+	</stringbundleset>
+	<script type="application/x-javascript" src="chrome://anonremail/content/options.js"/>
+	<popupset>
+		<tooltip id="cm-info1" noautohide="true" orient="vertical">
+			<description value="&anonremail.options.email.description1;"/>
+			<description value="&anonremail.options.email.description2;"/>
+		</tooltip>
+		<tooltip id="cm-info2" noautohide="true" orient="vertical">
+			<description value="&anonremail.options.statsgroup.link.description1;"/>
+			<description value="&anonremail.options.statsgroup.link.description2;"/>
+		</tooltip>
+		<tooltip id="cm-info3" noautohide="true" orient="vertical">
+			<description value="&anonremail.options.statsgroup.keylink.description1;"/>
+			<description value="&anonremail.options.statsgroup.keylink.description2;"/>
+			<description value="&anonremail.options.statsgroup.keylink.description3;"/>
+		</tooltip>
+		<popup id="insertremailermenu">
+			<menuitem label="&anonremail.options.list.context;" oncommand="return doContext()"/>
+		</popup>
+	</popupset>
+	
+	<dialogheader title="&anonremail.options.headertitle;" description="&anonremail.options.headerdescription;"/>
+	<hbox align="center">
+		<description align="center">&anonremail.options.emaillabel;</description>
+		<textbox id="new-remailer" flex="1"/>
+		<image src="chrome://anonremail/skin/info.png" tooltip="cm-info1" style="cursor:help;"/>
+	</hbox>
+	<groupbox flex="1">
+		<caption label="&anonremail.options.statsgroup;"/>
+		<hbox align="center">
+			<description align="center">&anonremail.options.statsgroup.link;</description>
+			<textbox id="new-remailerstats" flex="1"/>
+			<button label="&anonremail.options.statsgroup.read;" oncommand="return doRead();"/>
+			<image src="chrome://anonremail/skin/info.png" tooltip="cm-info2" style="cursor:help;"/>
+		</hbox>
+		<hbox align="center">
+			<description align="center">&anonremail.options.statsgroup.keylink;</description>
+			<textbox id="new-remailerstatskeys" flex="1"/>
+			<image src="chrome://anonremail/skin/info.png" tooltip="cm-info3" style="cursor:help;"/>
+		</hbox>
+		<listbox id="remailer-list" flex="1" context="insertremailermenu">
+			<listhead>
+				<listheader label="&anonremail.options.listheader1;"/>
+				<listheader label="&anonremail.options.listheader2;"/>
+				<listheader label="&anonremail.options.listheader3;"/>
+				<listheader label="&anonremail.options.listheader4;"/>
+				<listheader label="&anonremail.options.listheader5;"/>
+			</listhead>
+			<listcols>
+				<listcol flex="2"/>
+				<listcol flex="1"/>
+				<listcol flex="1"/>
+				<listcol flex="2"/>
+				<listcol flex="2"/>
+			</listcols>
+		</listbox>
+		<hbox align="center">
+			<label id="lastupdate-remailer" flex="1">Last update:</label>
+			<button label="&anonremail.options.default;" oncommand="return doDefault();"/>
+			<resizer dir="bottomright"/>
+		</hbox>	
+	</groupbox>
+</dialog>
